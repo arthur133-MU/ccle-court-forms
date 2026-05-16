@@ -721,6 +721,192 @@ body {
   .nav .btn { width: 100%; }
   .hdr-sub { display: none; }
 }
+
+/* ══ LANDING PAGE FULL-WIDTH SECTIONS ══════════════════════════════════════ */
+.main-full { width: 100%; padding: 0; max-width: 100%; margin: 0; }
+
+/* Hero */
+.lp-hero { background: var(--black); color: #fff; padding: 72px 24px 64px; text-align: center; }
+.lp-hero-inner { max-width: 720px; margin: 0 auto; }
+.lp-eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold-lt); background: rgba(232,188,74,.1);
+  border: 1px solid rgba(232,188,74,.22); padding: 5px 14px; border-radius: 20px;
+  margin-bottom: 22px;
+}
+.lp-h1 {
+  font-family: var(--font-display);
+  font-size: 3.1rem; font-weight: 800; letter-spacing: .02em; text-transform: uppercase;
+  line-height: 1.08; color: #fff; margin-bottom: 18px;
+}
+.lp-h1 em { color: var(--gold-lt); font-style: normal; }
+.lp-sub { font-size: 1.05rem; color: rgba(255,255,255,.65); line-height: 1.75; max-width: 560px; margin: 0 auto 36px; }
+.lp-intake {
+  background: rgba(255,255,255,.06); border: 2px solid rgba(255,255,255,.14);
+  border-radius: var(--rl); padding: 24px;
+  max-width: 640px; margin: 0 auto 16px;
+}
+.lp-intake-label {
+  font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--gold-lt); margin-bottom: 10px; display: block;
+}
+.lp-intake textarea {
+  width: 100%; background: rgba(255,255,255,.07);
+  border: 1.5px solid rgba(255,255,255,.18); border-radius: var(--r);
+  padding: 13px 16px; font-family: var(--font-sans); font-size: .97rem;
+  color: #fff; line-height: 1.65; min-height: 86px; resize: none; outline: none;
+}
+.lp-intake textarea::placeholder { color: rgba(255,255,255,.3); }
+.lp-intake textarea:focus { border-color: var(--gold-lt); box-shadow: 0 0 0 3px rgba(232,188,74,.15); }
+.lp-intake-row { display: flex; align-items: center; gap: 14px; margin-top: 13px; flex-wrap: wrap; }
+.btn-intake {
+  background: var(--gold); color: #fff;
+  font-family: var(--font-display); font-size: 1rem; font-weight: 800;
+  letter-spacing: .07em; text-transform: uppercase;
+  padding: 12px 28px; border-radius: var(--r); border: none; cursor: pointer;
+  transition: all .18s ease; flex-shrink: 0; display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-intake:hover { background: var(--gold-lt); transform: translateY(-1px); }
+.btn-intake:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+.lp-intake-or { font-size: .82rem; color: rgba(255,255,255,.35); }
+.lp-intake-err { font-size: .82rem; color: #fca5a5; margin-top: 9px; text-align: left; }
+.lp-sec-row { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.lp-sec-link {
+  font-size: .83rem; color: rgba(255,255,255,.42);
+  background: none; border: none; cursor: pointer;
+  text-decoration: underline; text-underline-offset: 3px; transition: color .18s;
+}
+.lp-sec-link:hover { color: rgba(255,255,255,.75); }
+
+/* Topic cards */
+.lp-topics { padding: 64px 24px; background: var(--white); }
+.lp-section-inner { max-width: 880px; margin: 0 auto; }
+.lp-sec-badge {
+  font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 8px; display: block;
+}
+.lp-sec-title {
+  font-family: var(--font-display); font-size: 2rem; font-weight: 800;
+  letter-spacing: .03em; text-transform: uppercase; color: var(--black); margin-bottom: 8px;
+}
+.lp-sec-desc { font-size: .93rem; color: var(--g600); margin-bottom: 34px; max-width: 540px; line-height: 1.7; }
+.topic-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.topic-card {
+  border: 2px solid var(--g200); border-radius: var(--rl); padding: 28px 22px;
+  cursor: pointer; transition: all .2s ease; background: var(--white); text-align: left; width: 100%;
+}
+.topic-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.1); }
+.topic-card.civil:hover    { border-color: var(--gold); }
+.topic-card.landlord:hover { border-color: var(--green); }
+.topic-card.traffic:hover  { border-color: var(--blue); }
+.tc-icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.55rem; margin-bottom: 16px; flex-shrink: 0;
+}
+.civil .tc-icon    { background: rgba(212,160,32,.1); }
+.landlord .tc-icon { background: rgba(46,139,53,.1); }
+.traffic .tc-icon  { background: rgba(33,101,168,.1); }
+.tc-title {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; color: var(--black); margin-bottom: 7px;
+}
+.tc-desc { font-size: .85rem; color: var(--g600); line-height: 1.65; margin-bottom: 12px; }
+.tc-examples { font-size: .77rem; color: var(--g400); font-style: italic; line-height: 1.5; }
+
+/* Attorney panel */
+.lp-attorney {
+  background: var(--g100); padding: 28px 24px;
+  border-top: 1px solid var(--g200); border-bottom: 1px solid var(--g200);
+  text-align: center;
+}
+.att-inner { max-width: 640px; margin: 0 auto; }
+.att-title {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--black); margin-bottom: 6px;
+}
+.att-desc { font-size: .86rem; color: var(--g600); margin-bottom: 16px; }
+.att-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.att-btn {
+  padding: 9px 18px; border-radius: var(--r); border: 1.5px solid var(--g200);
+  background: var(--white); font-family: var(--font-sans); font-size: .82rem;
+  font-weight: 600; color: var(--black); cursor: pointer; transition: all .18s;
+}
+.att-btn:hover { border-color: var(--black); background: var(--g200); }
+
+/* How it works */
+.lp-how { background: var(--black); padding: 64px 24px; color: #fff; }
+.lp-how .lp-sec-badge { color: var(--gold-lt); }
+.lp-how .lp-sec-title { color: #fff; }
+.lp-how .lp-sec-desc  { color: rgba(255,255,255,.5); }
+.steps-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.step-card {
+  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+  border-radius: var(--rl); padding: 28px 22px;
+}
+.step-num {
+  font-family: var(--font-display); font-size: 3rem; font-weight: 800;
+  color: var(--gold); line-height: 1; margin-bottom: 14px;
+}
+.step-title {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase; color: #fff; margin-bottom: 8px;
+}
+.step-desc { font-size: .84rem; color: rgba(255,255,255,.5); line-height: 1.7; }
+
+/* Mission */
+.lp-mission { background: var(--white); padding: 64px 24px; border-top: 4px solid var(--gold); }
+.mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; }
+.mission-pull {
+  font-family: var(--font-display); font-size: 1.75rem; font-weight: 700;
+  line-height: 1.25; color: var(--black); letter-spacing: .02em;
+  border-left: 4px solid var(--gold); padding-left: 20px;
+}
+.mission-body { font-size: .9rem; color: var(--g600); line-height: 1.85; }
+.mission-body p + p { margin-top: 14px; }
+.mission-help {
+  margin-top: 20px; background: var(--g100); border-radius: var(--r);
+  padding: 14px 16px; font-size: .82rem; color: var(--g600); line-height: 1.6;
+  border-left: 3px solid var(--green);
+}
+
+/* Privacy */
+.lp-privacy { background: var(--g100); padding: 48px 24px; border-top: 1px solid var(--g200); }
+.privacy-grid { display: grid; grid-template-columns: 160px 1fr; gap: 32px; align-items: start; max-width: 880px; margin: 0 auto; }
+.privacy-icon { font-size: 2.8rem; display: block; margin-bottom: 8px; }
+.privacy-lbl {
+  font-family: var(--font-display); font-size: 1.2rem; font-weight: 800;
+  letter-spacing: .05em; text-transform: uppercase; color: var(--black);
+}
+.privacy-txt { font-size: .875rem; color: var(--g600); line-height: 1.8; }
+.privacy-txt strong { color: var(--black); }
+.privacy-txt p + p { margin-top: 12px; }
+
+/* Partners */
+.lp-partners { background: var(--white); padding: 48px 24px; border-top: 1px solid var(--g200); }
+.partners-inner { max-width: 880px; margin: 0 auto; text-align: center; }
+.partners-badge { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--g400); margin-bottom: 28px; display: block; }
+.logos-row { display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap; }
+.logo-block { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.logo-img { height: 56px; object-fit: contain; max-width: 180px; }
+.logo-ph {
+  height: 56px; width: 172px; background: var(--g100);
+  border: 2px dashed var(--g200); border-radius: var(--r);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .73rem; color: var(--g400); font-weight: 600; text-align: center; padding: 8px;
+  line-height: 1.4;
+}
+.logo-name { font-size: .72rem; color: var(--g400); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.logos-divider { width: 1px; height: 48px; background: var(--g200); }
+
+@media (max-width: 768px) {
+  .topic-grid, .steps-grid { grid-template-columns: 1fr; }
+  .mission-grid { grid-template-columns: 1fr; gap: 28px; }
+  .privacy-grid { grid-template-columns: 1fr; gap: 16px; }
+  .lp-h1 { font-size: 2.1rem; }
+  .logos-divider { display: none; }
+}
 </style>
 </head>
 <body>
@@ -769,7 +955,10 @@ const S = {
   ans:   {},
   aiTxt: '',
   aiLoading: false,
-  err: null
+  err: null,
+  classifying: false,
+  intakeErr: null,
+  intakeTxt: ''
 };
 
 /* ================================================================
@@ -1021,6 +1210,7 @@ function trafficSections() {
    ================================================================ */
 function render() {
   const app = document.getElementById('app');
+  app.className = S.phase === 'landing' ? 'main-full' : 'main';
   if (S.phase === 'landing')   app.innerHTML = renderLanding();
   if (S.phase === 'interview') app.innerHTML = renderInterview();
   if (S.phase === 'review')    app.innerHTML = renderReview();
@@ -1031,47 +1221,160 @@ function render() {
 /* ── Landing ─────────────────────────────────────── */
 function renderLanding() {
   return `
-  <div class="hero">
-    <div class="hero-badge">&#9670; Free Public Resource &#9670;</div>
-    <h1>West Virginia Magistrate<br>Court Form Assistant</h1>
-    <p>Answer plain-language questions and receive a completed form summary ready to support your magistrate court filing — free, confidential, and no account required.</p>
+  <!-- HERO -->
+  <div class="lp-hero">
+    <div class="lp-hero-inner">
+      <div class="lp-eyebrow">&#9670; Free &nbsp;&middot;&nbsp; No Account Needed &nbsp;&middot;&nbsp; West Virginia</div>
+      <h1 class="lp-h1">Having a legal problem<br>and <em>don&rsquo;t have a lawyer?</em></h1>
+      <p class="lp-sub">This free tool helps West Virginia residents complete magistrate court forms &mdash; in plain English, step by step, at no cost.</p>
+
+      <div class="lp-intake">
+        <span class="lp-intake-label">Tell us what&rsquo;s going on</span>
+        <textarea id="intake-input" placeholder="Describe your situation in a sentence or two. Example: My landlord won&rsquo;t fix the heat and is trying to evict me. Or: My contractor took $2,000 and never finished the job." rows="3"></textarea>
+        <div class="lp-intake-row">
+          <button class="btn-intake" id="btn-intake" ${S.classifying ? 'disabled' : ''}>
+            ${S.classifying ? '<span class="spinner"></span>&nbsp; Finding your form&hellip;' : 'Find My Form &nbsp;&#8594;'}
+          </button>
+          <span class="lp-intake-or">or browse by topic below</span>
+        </div>
+        ${S.intakeErr ? '<div class="lp-intake-err">&#9888;&nbsp;' + esc(S.intakeErr) + '</div>' : ''}
+      </div>
+
+      <div class="lp-sec-row">
+        <button class="lp-sec-link" id="btn-attorney">Are you an attorney looking for forms? &rarr;</button>
+      </div>
+    </div>
   </div>
 
-  <div class="form-cards">
-    <button class="fcard" data-form="civil">
-      <div class="fcard-icon">&#9878;</div>
-      <div class="fcard-body">
-        <div class="fcard-num">SCA-M207</div>
-        <div class="fcard-title">Civil Complaint</div>
-        <div class="fcard-desc">For consumer disputes, unpaid debts, property damage, breach of contract, and similar civil claims. Typically for amounts up to $10,000.</div>
+  <!-- ATTORNEY PANEL (hidden by default) -->
+  <div class="lp-attorney" id="attorney-section" style="display:none;">
+    <div class="att-inner">
+      <div class="att-title">Attorney &amp; Professional Form Access</div>
+      <div class="att-desc">Select the form you need directly. These are the same guided interviews available to the public.</div>
+      <div class="att-btns">
+        <button class="att-btn" data-form="civil">Civil Complaint (SCA-M207)</button>
+        <button class="att-form-btn att-btn" data-form="landlord">Landlord-Tenant (MLTPTWR / MLTAWWO)</button>
+        <button class="att-form-btn att-btn" data-form="traffic">Traffic Citation (SCA-M340NP)</button>
       </div>
-      <div class="fcard-arrow">&#8250;</div>
-    </button>
-
-    <button class="fcard" data-form="landlord">
-      <div class="fcard-icon">&#127968;</div>
-      <div class="fcard-body">
-        <div class="fcard-num">MLTPTWR / MLTAWWO</div>
-        <div class="fcard-title">Landlord-Tenant Proceeding</div>
-        <div class="fcard-desc">For wrongful occupation petitions (eviction) filed by landlords, and for tenant answers or defenses to an eviction proceeding.</div>
-      </div>
-      <div class="fcard-arrow">&#8250;</div>
-    </button>
-
-    <button class="fcard" data-form="traffic">
-      <div class="fcard-icon">&#128657;</div>
-      <div class="fcard-body">
-        <div class="fcard-num">SCA-M340NP</div>
-        <div class="fcard-title">Motion to Dismiss Traffic Citation</div>
-        <div class="fcard-desc">To request dismissal of a traffic citation in magistrate court on factual, procedural, or other applicable grounds.</div>
-      </div>
-      <div class="fcard-arrow">&#8250;</div>
-    </button>
+    </div>
   </div>
 
-  <div class="disc">
-    <div class="disc-title">Important Notice</div>
-    <p>This tool provides <strong>legal information only</strong>, not legal advice. It is designed to help you understand and complete West Virginia Magistrate Court forms. It does not create an attorney-client relationship. If your situation is complex or involves significant amounts, you are encouraged to consult a licensed West Virginia attorney. Free or low-cost legal resources may be available through the West Virginia State Bar or Appalachian Legal Services.</p>
+  <!-- BROWSE BY TOPIC -->
+  <div class="lp-topics" id="topic-section">
+    <div class="lp-section-inner">
+      <span class="lp-sec-badge">Browse by Topic</span>
+      <div class="lp-sec-title">What Can We Help With?</div>
+      <p class="lp-sec-desc">Not sure what your situation is called legally? That&rsquo;s okay. Just pick the topic that sounds right and we will guide you from there.</p>
+      <div class="topic-grid">
+        <button class="topic-card civil" data-form="civil">
+          <div class="tc-icon">&#9878;</div>
+          <div class="tc-title">Money &amp; Debt</div>
+          <div class="tc-desc">Someone owes you money, sold you something that didn&rsquo;t work, broke an agreement, or damaged your property.</div>
+          <div class="tc-examples">e.g.: unpaid loan &middot; bad contractor &middot; defective product &middot; property damage</div>
+        </button>
+        <button class="topic-card landlord" data-form="landlord">
+          <div class="tc-icon">&#127968;</div>
+          <div class="tc-title">Housing</div>
+          <div class="tc-desc">A dispute between a landlord and tenant &mdash; whether you are filing for eviction or defending yourself against one.</div>
+          <div class="tc-examples">e.g.: eviction notice &middot; unpaid rent &middot; unsafe conditions &middot; lease dispute</div>
+        </button>
+        <button class="topic-card traffic" data-form="traffic">
+          <div class="tc-icon">&#128657;</div>
+          <div class="tc-title">Traffic</div>
+          <div class="tc-desc">You received a traffic ticket or citation and want to ask the court to dismiss it.</div>
+          <div class="tc-examples">e.g.: speeding ticket &middot; wrong information on citation &middot; procedural error</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="lp-how">
+    <div class="lp-section-inner">
+      <span class="lp-sec-badge">Simple Process</span>
+      <div class="lp-sec-title">Three Steps. No Lawyer Needed.</div>
+      <p class="lp-sec-desc">Takes about 10 minutes. No legal knowledge required. No account. No cost.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-title">Describe Your Situation</div>
+          <div class="step-desc">Tell us what happened in your own words. We figure out which court form fits your situation.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-title">Answer Simple Questions</div>
+          <div class="step-desc">We walk you through the form one plain-language question at a time. No legal jargon. You can go back and change answers anytime.</div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-title">Download Your Form</div>
+          <div class="step-desc">Get a completed form summary as a PDF. Take it to your local magistrate court clerk&rsquo;s office to file.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <div class="lp-mission">
+    <div class="lp-section-inner">
+      <div class="mission-grid">
+        <div>
+          <span class="lp-sec-badge" style="margin-bottom:16px;">Our Mission</span>
+          <div class="mission-pull">Empowering West Virginians to understand and use the law.</div>
+        </div>
+        <div class="mission-body">
+          <p>The CCLE coordinates the development of consumer law, policy, and education research to support and serve consumers. Our unique partnership brings together scholars, practitioners, and students at the CCLE to empower, lead, and transform our communities.</p>
+          <p>For many West Virginians &mdash; especially in rural and southern parts of the state &mdash; navigating the court system without a lawyer feels impossible. Forms are confusing. Legal language is intimidating. This tool exists to change that. It is built specifically for people who have never been to court and don&rsquo;t know where to start.</p>
+          <div class="mission-help">
+            <strong>Need more help?</strong> Free legal assistance may be available through <strong>Appalachian Legal Services</strong> or the <strong>West Virginia State Bar Lawyer Referral Service</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="lp-privacy">
+    <div class="privacy-grid">
+      <div>
+        <span class="privacy-icon">&#128274;</span>
+        <div class="privacy-lbl">Your Privacy</div>
+      </div>
+      <div class="privacy-txt">
+        <p><strong>We do not collect, store, or share your information.</strong> Everything you type stays on your device. When you close the browser, your answers are gone. There is no account, no login, and no database. Nothing you enter here is retained by the CCLE, Marshall University, or WVU College of Law.</p>
+        <p>The AI assistant feature sends your plain-language description to a third-party AI service to generate legal language. That text is processed and not stored. <strong>Do not include your Social Security number, financial account numbers, or other sensitive personal information.</strong></p>
+        <p>This tool provides <strong>legal information only</strong> &mdash; not legal advice &mdash; and does not create an attorney-client relationship.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTNERS -->
+  <div class="lp-partners">
+    <div class="partners-inner">
+      <span class="partners-badge">A Joint Initiative Of</span>
+      <div class="logos-row">
+        <div class="logo-block">
+          <img src="mu-logo.png" alt="Marshall University" class="logo-img" onerror="this.style.display='none';this.nextSibling.style.display='flex'"><div class="logo-ph" style="display:none;">Marshall University<br><small>(upload mu-logo.png)</small></div>
+          <div class="logo-name">Marshall University</div>
+        </div>
+        <div class="logos-divider"></div>
+        <div class="logo-block">
+          <img src="wvu-law-logo.png" alt="WVU College of Law" class="logo-img" onerror="this.style.display='none';this.nextSibling.style.display='flex'"><div class="logo-ph" style="display:none;">WVU College of Law<br><small>(upload wvu-law-logo.png)</small></div>
+          <div class="logo-name">WVU College of Law</div>
+        </div>
+        <div class="logos-divider"></div>
+        <div class="logo-block">
+          <svg viewBox="0 0 56 65" height="52" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28,2 L52,18 L28,36 L4,18 Z" fill="#d4a020"/>
+            <path d="M4,18 L28,36 L16,58 L2,44 Z" fill="#2e8b35"/>
+            <path d="M52,18 L28,36 L40,58 L54,44 Z" fill="#2165a8"/>
+            <path d="M16,58 L28,64 L40,58 L28,36 Z" fill="#1a1a1a" opacity=".6"/>
+            <polygon points="28,24 39,31 39,46 28,53 17,46 17,31" fill="#111111"/>
+          </svg>
+          <div class="logo-name">The CCLE</div>
+        </div>
+      </div>
+    </div>
   </div>`;
 }
 
@@ -1273,15 +1576,95 @@ function renderComplete() {
   </div>`;
 }
 
+
+/* ================================================================
+   INTAKE CLASSIFICATION
+   ================================================================ */
+async function submitIntake() {
+  const inp = document.getElementById('intake-input');
+  if (!inp || !inp.value.trim()) {
+    S.intakeErr = 'Please describe your situation before continuing.';
+    render(); return;
+  }
+  S.classifying = true;
+  S.intakeErr = null;
+  S.intakeTxt = inp.value.trim();
+  render();
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 10,
+        system: `Classify the legal situation into exactly one category. Reply with ONLY one word — civil, landlord, or traffic — nothing else.
+civil = money owed, debt, consumer dispute, breach of contract, property damage, someone owes you money
+landlord = eviction, rental, tenant, lease, rent, housing dispute, landlord problem
+traffic = traffic ticket, traffic citation, speeding, driving violation, traffic court`,
+        messages: [{ role: 'user', content: inp.value.trim() }]
+      })
+    });
+    const data = await res.json();
+    const result = (data.content?.[0]?.text || '').trim().toLowerCase().replace(/[^a-z]/g,'');
+    if (['civil','landlord','traffic'].includes(result)) {
+      S.form = result; S.step = 0; S.ans = {}; S.aiTxt = '';
+      S.err = null; S.classifying = false; S.phase = 'interview';
+      render(); scrollTo(0,0);
+    } else {
+      S.classifying = false;
+      S.intakeErr = "We weren’t sure which form fits your situation. Please choose a topic below.";
+      render();
+      document.getElementById('topic-section')?.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  } catch(e) {
+    S.classifying = false;
+    S.intakeErr = 'Something went wrong. Please choose a topic below or try again.';
+    render();
+    document.getElementById('topic-section')?.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+
 /* ================================================================
    EVENT BINDING
    ================================================================ */
 function bindEvents() {
-  // Landing: form cards
+  // Landing: old form cards (kept for fallback)
   document.querySelectorAll('.fcard').forEach(btn => {
     btn.addEventListener('click', () => {
       S.form = btn.dataset.form;
       S.step = 0; S.ans = {}; S.aiTxt = ''; S.err = null;
+      S.phase = 'interview'; render(); scrollTo(0,0);
+    });
+  });
+
+  // Landing: intake submit
+  const bIntake = document.getElementById('btn-intake');
+  if (bIntake) bIntake.addEventListener('click', submitIntake);
+  const intakeTA = document.getElementById('intake-input');
+  if (intakeTA) intakeTA.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); submitIntake(); }
+  });
+
+  // Landing: attorney toggle
+  const bAtt = document.getElementById('btn-attorney');
+  if (bAtt) bAtt.addEventListener('click', () => {
+    const sec = document.getElementById('attorney-section');
+    if (sec) { sec.style.display = sec.style.display === 'none' ? 'block' : 'none'; sec.scrollIntoView({behavior:'smooth'}); }
+  });
+
+  // Landing: topic cards
+  document.querySelectorAll('.topic-card').forEach(card => {
+    card.addEventListener('click', () => {
+      S.form = card.dataset.form; S.step = 0; S.ans = {}; S.aiTxt = ''; S.err = null;
+      S.phase = 'interview'; render(); scrollTo(0,0);
+    });
+  });
+
+  // Landing: attorney form buttons
+  document.querySelectorAll('.att-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      S.form = btn.dataset.form; S.step = 0; S.ans = {}; S.aiTxt = ''; S.err = null;
       S.phase = 'interview'; render(); scrollTo(0,0);
     });
   });
