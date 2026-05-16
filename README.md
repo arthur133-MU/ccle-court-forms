@@ -91,12 +91,23 @@ This project uses GitHub Pages for hosting.
 - [ ] Backend API proxy for production-scale API key management
 - [ ] Analytics (privacy-respecting, aggregate only — no PII)
 
-### Phase 3 — Longer Term
-- [ ] People's Law School event integration — form tool promoted at and following PLS events
-- [ ] Financial EmpowerED cross-link — consumer debt and landlord-tenant content connected to Financial EmpowerED programming
-- [ ] Spanish language option
-- [ ] Accessibility audit (WCAG 2.1 AA compliance)
-- [ ] Mobile-optimized PDF output
+### Phase 3 — Consumer Legal Document Tools
+
+This phase expands the CCLE site beyond court forms into a broader consumer-facing legal document and education layer. The animating idea is a consumer-oriented alternative to enterprise legal AI tools — built specifically for rural and underserved West Virginians rather than for in-house legal teams or institutional users.
+
+Potential tools in this layer:
+
+- [ ] **Demand letter generator** — User describes their situation in plain language; tool produces a formal demand letter they can send before filing in court. Covers unpaid debts, defective products, contractor disputes, and similar consumer claims.
+- [ ] **Lease review tool** — User uploads or pastes a rental lease; tool produces a plain-language summary of key terms, flags unusual or potentially unfavorable clauses, and explains tenant rights under WV law.
+- [ ] **Consumer rights explainer** — User describes a situation; tool explains what WV consumer protection law says about it and what options are available, without providing legal advice.
+- [ ] **Simple document templates** — Plain-language, WV-appropriate templates for common documents ordinary people and small nonprofits need: basic service agreements, volunteer waivers, simple contractor agreements, cease and desist letters. AI-assisted customization based on user input.
+- [ ] **People's Law School integration** — form tool promoted at and following PLS events
+- [ ] **Financial EmpowerED cross-link** — consumer debt and landlord-tenant content connected to Financial EmpowerED programming
+- [ ] **Spanish language option** across all tools
+- [ ] **Accessibility audit** (WCAG 2.1 AA compliance)
+- [ ] **Mobile-optimized PDF output**
+
+**Strategic note:** This phase is intentionally differentiated from enterprise legal AI tools designed for in-house legal departments. The CCLE's Phase 3 target audience is the person who has never had a lawyer, does not know what an NDA is, and needs practical help navigating a consumer or housing situation. That gap is underserved by existing legal tech and is directly aligned with the CCLE's public education mission. It is also a strong grant narrative for Legal Services Corporation technology grants, State Justice Institute funding, and access-to-justice philanthropy.
 
 ---
 
