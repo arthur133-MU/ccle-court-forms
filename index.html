@@ -907,6 +907,49 @@ body {
   .lp-h1 { font-size: 2.1rem; }
   .logos-divider { display: none; }
 }
+
+/* ── WHAT TO BRING + AFTER YOU DOWNLOAD ─────────────── */
+.lp-prep {
+  background: var(--white);
+  padding: 60px 24px;
+  border-top: 1px solid var(--g200);
+}
+.prep-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.prep-card {
+  border: 1.5px solid var(--g200); border-radius: var(--rl);
+  padding: 28px 26px;
+}
+.prep-card.bring { border-top: 4px solid var(--gold); }
+.prep-card.after { border-top: 4px solid var(--green); }
+.prep-icon { font-size: 1.8rem; margin-bottom: 12px; display: block; }
+.prep-title {
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 800;
+  letter-spacing: .04em; text-transform: uppercase; color: var(--black); margin-bottom: 8px;
+}
+.prep-desc { font-size: .86rem; color: var(--g600); line-height: 1.7; margin-bottom: 16px; }
+.prep-list { display: flex; flex-direction: column; gap: 8px; }
+.prep-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: .85rem; color: var(--g600); line-height: 1.55;
+}
+.prep-item-dot {
+  width: 20px; height: 20px; border-radius: 50%;
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+  font-size: .65rem; font-weight: 700; margin-top: 1px;
+}
+.bring .prep-item-dot { background: rgba(212,160,32,.15); color: var(--gold); }
+.after .prep-item-dot { background: rgba(46,139,53,.12); color: var(--green); }
+.prep-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 18px; font-size: .83rem; font-weight: 600;
+  color: var(--blue); text-decoration: none;
+  border-bottom: 1px solid rgba(33,101,168,.3); padding-bottom: 1px;
+  transition: color .18s;
+}
+.prep-link:hover { color: var(--black); border-color: var(--black); }
+@media (max-width: 768px) {
+  .prep-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -1310,6 +1353,44 @@ function renderLanding() {
           <div class="step-title">Download Your Form</div>
           <div class="step-desc">Get a completed form summary as a PDF. Take it to your local magistrate court clerk&rsquo;s office to file.</div>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- WHAT TO BRING + AFTER YOU DOWNLOAD -->
+  <div class="lp-prep">
+    <div class="lp-section-inner">
+      <div class="prep-grid">
+
+        <div class="prep-card bring">
+          <span class="prep-icon">&#128203;</span>
+          <div class="prep-title">What to Have Ready</div>
+          <p class="prep-desc">You can start the form without anything in hand, but having this information nearby will make it faster and easier.</p>
+          <div class="prep-list">
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>The full name and address of the other person or business involved</span></div>
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>The date the problem started or the main incident occurred</span></div>
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>The dollar amount you are claiming or that is in dispute</span></div>
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>Any written agreements, contracts, leases, or receipts related to your situation</span></div>
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>For traffic citations: the ticket itself, with the citation number and offense listed</span></div>
+            <div class="prep-item"><div class="prep-item-dot">&#10003;</div><span>For landlord-tenant cases: any notices, letters, or texts exchanged with the other party</span></div>
+          </div>
+        </div>
+
+        <div class="prep-card after">
+          <span class="prep-icon">&#128196;</span>
+          <div class="prep-title">After You Download</div>
+          <p class="prep-desc">Your PDF is a completed summary of your answers — not the official court form. Here is what to do next.</p>
+          <div class="prep-list">
+            <div class="prep-item"><div class="prep-item-dot">1</div><span>Review your PDF carefully and make sure everything is accurate</span></div>
+            <div class="prep-item"><div class="prep-item-dot">2</div><span>Get the official form from your county magistrate court clerk's office or download it at <strong>courtswv.gov</strong></span></div>
+            <div class="prep-item"><div class="prep-item-dot">3</div><span>Transfer your answers onto the official form, sign it, and make a copy for yourself</span></div>
+            <div class="prep-item"><div class="prep-item-dot">4</div><span>File the completed official form with the clerk and pay the required filing fee — fees are typically low for magistrate court</span></div>
+            <div class="prep-item"><div class="prep-item-dot">5</div><span>Keep copies of everything you file</span></div>
+          </div>
+          <a href="https://courtswv.gov/courts/magistrate-courts" target="_blank" rel="noopener" class="prep-link">Find your magistrate court &rarr;</a>
+        </div>
+
       </div>
     </div>
   </div>
